@@ -55,7 +55,7 @@ Socket programming finds applications in various domains, including web developm
 
 ## Programe
 client
-###
+~~~
 import socket
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -73,9 +73,9 @@ conn.send("Hello from Server!".encode())
 
 conn.close()
 server_socket.close()
-###
+~~~
 Sever
-'''
+~~~
 import socket
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -87,7 +87,7 @@ data = client_socket.recv(1024).decode()
 print(f"Server says: {data}")
 
 client_socket.close()
-'''
+~~~
 ## Output
 client:
 <img width="403" height="137" alt="image" src="https://github.com/user-attachments/assets/dce99f45-65fe-4ed2-a108-f6291851f0a0" />
